@@ -32,7 +32,8 @@ jobs:
           cd terraform/registry/
           terraform init \
           -backend-config=config/backend-config.tf \
-          -reconfigure \
+          -reconfigure 
+          
           terraform apply \
           -var-file=vars.tfvars \
           -auto-approve 
