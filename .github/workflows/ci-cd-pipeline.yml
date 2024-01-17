@@ -10,7 +10,7 @@ permissions:
 
 env:
   AWS_REGION: eu-central-1
-  #AWS_ROLE_ARN: arn:aws:iam::538122504114:role/bitwize-stoma
+
 jobs:
   registry:
     runs-on: ubuntu-20.04
