@@ -53,8 +53,8 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: ${{ env.AWS_ROLE_ARN }}
-          aws-region: ${{ env.AWS_REGION }}
+          role-to-assume: arn:aws:iam::538122504114:role/bitwize-stoma
+          aws-region: eu-central-1
       - name: Image build and push
         id: docker-build
         run: |
