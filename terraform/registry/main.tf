@@ -1,5 +1,7 @@
 terraform {
   required_version = ">= 1.0.11"
+  backend "s3" { /* See the backend config in config/backend-config.tf */ }
+
 
   required_providers {
     aws = {
@@ -52,5 +54,4 @@ output "repository_url" {
   value = aws_ecr_repository.repository.repository_url
 }
 
-backend "s3" { /* See the backend config in config/backend-config.tf */ }
 
