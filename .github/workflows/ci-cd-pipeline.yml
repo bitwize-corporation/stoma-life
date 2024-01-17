@@ -34,11 +34,11 @@ jobs:
           terraform init \
           -backend-config=config/backend-config.tf \
           -reconfigure \
-          -input=false
+         
           
           terraform apply \
           -var-file=vars.tfvars \
-          -input=false \
+          
           -auto-approve 
           
           export REPOSITORY_NAME=$(terraform output --raw repository_name)
