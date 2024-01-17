@@ -33,11 +33,12 @@ jobs:
           terraform init \
           -backend-config=config/backend-config.tf \
           -reconfigure \
+          -input=false
          
           
           terraform apply \
           -var-file=vars.tfvars \
-          -auto-approve \
+          -auto-approve 
           
           export REPOSITORY_NAME=$(terraform output --raw repository_name)
           echo "::set-output name=repository-name::$REPOSITORY_NAME"
