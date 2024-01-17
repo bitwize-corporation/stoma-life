@@ -1,4 +1,5 @@
 import { prisma } from "@/app/lib/prisma";
+// @ts-ignore
 import { hash } from "bcryptjs";
 import { NextResponse } from "next/server";
 import sendgrid from "@sendgrid/mail";
