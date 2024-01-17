@@ -10,7 +10,7 @@ permissions:
 
 env:
   AWS_REGION: eu-central-1
-  AWS_ROLE_ARN: arn:aws:iam::538122504114:role/bitwize-stoma
+  #AWS_ROLE_ARN: arn:aws:iam::538122504114:role/bitwize-stoma
 
 
 jobs:
@@ -24,7 +24,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: arn:aws:iam::538122504114:oidc-provider/token.actions.githubusercontent.com
+          role-to-assume:  arn:aws:iam::538122504114:role/bitwize-stoma
           aws-region: eu-central-1
       - name: Create ECR
         id: create-registry
