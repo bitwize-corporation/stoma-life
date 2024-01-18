@@ -19,7 +19,7 @@ const Home = async () => {
       <div className="col-lg-6" data-aos="fade-right">
         <div className="title-style-one text-center text-lg-start">
           <h2 className="main-title fw-normal tx-dark m0">
-            Bine ai venit <span>{user.name} </span> {user.surrname}
+            Bine ai revenit <span>{user.name} </span> {user.surrname}
           </h2>
         </div>
         {/* /.title-style-one */}
